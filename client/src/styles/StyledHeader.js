@@ -54,9 +54,8 @@ const StyledHeader = styled.header`
   }
 
   .header__overline {
-    text-transform: uppercase;
-    font-size: var(--fz-xxs);
-    font-weight: 700;
+    font-size: var(--fz-xs);
+    font-weight: 500;
     margin-bottom: var(--spacing-xs);
   }
 

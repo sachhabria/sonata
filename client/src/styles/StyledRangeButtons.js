@@ -23,6 +23,8 @@ const StyledRangeButtons = styled.ul`
   }
 
   button {
+    font-size: var(--fz-sm);
+    font-weight: 500;
     background-color: var(--dark-grey);
 
     &:hover,
@@ -31,7 +33,8 @@ const StyledRangeButtons = styled.ul`
     }
 
     &.active {
-      background-color: var(--green);
+      background-color: var(--white);
+      color: var(--black);
     }
   }
 `;

@@ -53,11 +53,9 @@ const StyledSection = styled.section`
   .section__see-all {
     display: flex;
     align-items: flex-end;
-    text-transform: uppercase;
     color: var(--light-grey);
-    font-size: var(--fz-xxs);
-    font-weight: 700;
-    letter-spacing: 0.1em;
+    font-size: var(--fz-sm);
+    font-weight: 600;
     padding-bottom: 2px;
   }
 `;
