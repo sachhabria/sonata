@@ -17,13 +17,8 @@ const app = express();
 // Priority serve any static files.
 app.use(express.static(path.resolve(__dirname, './client/build')));
 
-app.get('/', (req, res) => {
-    const data = {
-        name: 'Sacho',
-        isAwesome: true
-    };
-
-    res.json(data);
+app.get('/', function (req, res) {
+  res.render(path.resolve(__dirname, '../client/build/index.html'));
 });
 
 /**
@@ -48,8 +43,6 @@ app.get('/login', (req, res) => {
     res.cookie(stateKey, state);
 
     const scope = [
-      'user-read-private',
-      'user-read-email',
       'user-top-read',
     ].join(' ');
 
