@@ -27,7 +27,7 @@ const StyledLoginButton = styled.a`
 const LOGIN_URI =
 process.env.NODE_ENV !== 'production'
   ? 'http://localhost:8888/login'
-  : 'http://sonatella-0b017874cb20.herokuapp.com/login';
+  : 'https://sonatella-0b017874cb20.herokuapp.com/login';
 
 const Login = () => (
   <StyledLoginContainer>

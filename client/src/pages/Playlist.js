@@ -110,7 +110,9 @@ const Playlist = () => {
               )}
               <div>
                 <div className="header__overline">Playlist</div>
-                <h1 className="header__name">{playlist.name}</h1>
+                <a href={playlist.external_urls.spotify} target="_blank" rel="noopener noreferrer">
+                  <h1 className="header__name">{playlist.name}</h1>
+                </a>
                 <p className="header__meta">
                   {playlist.followers.total ? (
                     <span>{playlist.followers.total} {`follower${playlist.followers.total !== 1 ? 's' : ''}`}</span>

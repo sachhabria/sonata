@@ -13,11 +13,14 @@ const TrackList = ({ tracks }) => (
                 <div className="track__item__img">
                   <img src={track.album.images[2].url} alt={track.name} />
                 </div>
+                
               )}
               <div className="track__item__name-artist">
-                <div className="track__item__name overflow-ellipsis">
-                  {track.name}
-                </div>
+                <a href={track.external_urls.spotify} target="_blank" rel="noopener noreferrer">
+                  <div className="track__item__name overflow-ellipsis">
+                    {track.name}
+                  </div>
+                </a>
                 <div className="track__item__artist overflow-ellipsis">
                   {track.artists.map((artist, i) => (
                     <span key={i}>
