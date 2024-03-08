@@ -77,7 +77,7 @@ const hasTokenExpired = () => {
 /**
  * Handles logic for retrieving the Spotify access token from localStorage
  * or URL query params
- * @returns {string} A Spotify access token
+ * @returns {string} A access token
  */
 const getAccessToken = () => {
     const queryString = window.location.search;
